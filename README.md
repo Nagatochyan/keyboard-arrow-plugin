@@ -1,5 +1,5 @@
 # keyboard-arrow-plugin
-A simple keyboard plugin that can type arrow easily written by python. 
+A simple keyboard plugin that can type arrow easily. Written by python. 
 # install
 pip install keyboard<br>
 pip install pyautogui<br>
