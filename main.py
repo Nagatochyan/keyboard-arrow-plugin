@@ -1,13 +1,19 @@
-import pyautogui
 import keyboard
+import pyautogui
+import pyperclip
+def test():
+  if keyboard.is_pressed("esc+right"):
+    pyperclip.copy("→")
+    pyautogui.hotkey('ctrl', 'v')
+  if keyboard.is_pressed("esc+left"):
+    pyperclip.copy("←")
+    pyautogui.hotkey('ctrl', 'v')
+  if keyboard.is_pressed("esc+up"):
+    pyperclip.copy("↑")
+    pyautogui.hotkey('ctrl', 'v')
+  if keyboard.is_pressed("esc+down"):
+    pyperclip.copy("↓")
+    pyautogui.hotkey('ctrl', 'v')
 while True:
-  if keyboard.read_key() == "shift+right":
-    pyautogui.write("→")
-  if keyboard.read_key() == "shift+left":
-    pyautogui.write("←")
-  if keyboard.read_key() == "shift+up":
-    pyautogui.write("↑")
-  if keyboard.read_key() == "shift+down": 
-    pyautogui.write("↓")
-    
+  test()
     
